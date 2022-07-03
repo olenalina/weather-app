@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/weather.css" />
+    <script
+      src="https://kit.fontawesome.com/6922a98332.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>    
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="city-form">
+        <input type="text" id="city-input" placeholder="Enter a city" />
+        <input type="submit" class="btn btn-primary" value="Search" />
+      </form>
+      <br />
+      <h1 id="city"></h1>
+      <div class="weather-detail-date" id="detail-date"></div>
+      <br />
+      <div class="row">
+        <div class="col-6">
+          <div class="weather-icon-today" id="icon">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+
+          <div class="weather-temperature-today">
+            <span class="temp" id="temp"></span
+            ><span class="units"
+              ><a id="celsius-link"> °C </a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="weather-detail-humidity">Humidity: <span id="humidity"></span>%</div>
+        </div>
+
+        <div class="col-6">
+          <div class="weather-detail-condition" <span id="description"></span></div>
+        </div>
+        <div class="col-6">
+          <div class="weather-detail__text">Wind: <span id="wind"></span> km/h</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="weekday">Wed</div>
+          <div class="weather-icon"><i class="fa-solid fa-sun"></i></div>
+          <div class="weather-temprature">21°</div>
+        </div>
+        <div class="col">
+          <div class="weekday">Thu</div>
+          <div class="weather-icon">
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+          </div>
+          <div class="weather-temprature">22°</div>
+        </div>
+        <div class="col">
+          <div class="weekday">Fri</div>
+          <div class="weather-icon"><i class="fa-solid fa-cloud-rain"></i></div>
+          <div class="weather-temprature">20°</div>
+        </div>
+        <div class="col">
+          <div class="weekday">Sat</div>
+          <div class="weather-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+          <div class="weather-temprature">17°</div>
+        </div>
+        <div class="col">
+          <div class="weekday">Sun</div>
+          <div class="weather-icon"><i class="fa-solid fa-sun"></i></div>
+          <div class="weather-temprature">16°</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
