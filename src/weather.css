@@ -1,0 +1,51 @@
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 28px;
+}
+.container {
+  margin: 20px 48px 0 48px;
+  padding: 20px 20px 20px 20px;
+  display: block;
+  max-width: 600px;
+  text-align: left;
+  text-size-adjust: 100%;
+  border: solid grey;
+}
+.weather-detail__text {
+  color: #878787;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+  line-height: 28px;
+}
+.weather-icon-today {
+  font-size: 25px;
+}
+.weather-temperature-today {
+  position: relative;
+  left: 50px;
+  bottom: 38px;
+  font-size: 25px;
+}
+.units {
+  font-size 16px;
+}
+.weather-detail-condition {
+  position: relative;
+  bottom: 38px;
+  color: #878787;
+}
+.weather-detail__text {
+  position: relative;
+  bottom: 56px;
+}
+.weather-detail-humidity {
+  color: #878787;
+}
+.weather-icon {
+  font-size: 20px;
+}
